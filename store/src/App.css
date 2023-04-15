@@ -15,3 +15,13 @@
   object-position: center; /* center image within container */
   width: 100%; /* set fixed width */
 }
+
+.btn-circle {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+ 
+}

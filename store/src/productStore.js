@@ -20,10 +20,10 @@ const productsArray = [
     }
 ]
 
-function getProductDate(id) {
+function getProductData(id) {
     let productData = productsArray.find(product => product.id ===id)
 
-    if (productData == undefined){
+    if (productData === undefined){
         console.log("Product data does not exists")
         return undefined;
     }
@@ -31,4 +31,4 @@ function getProductDate(id) {
     return productData;
 }
 
-export {productsArray, getProductDate }; 
+export {productsArray, getProductData }; 
