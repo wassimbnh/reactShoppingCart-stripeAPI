@@ -8,7 +8,7 @@ import { BiLogOut} from 'react-icons/bi'
 import {CgProfile}from 'react-icons/cg'
 
 const NavbarComp = () => {
-  const isLoggedIn = true;
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   const cart = useContext(CartContext)
   const [show, setShow] = useState(false)
   const [showProfile, setShowProfile] = useState(false);
@@ -79,7 +79,7 @@ const NavbarComp = () => {
 
                 <Dropdown.Menu show={showProfile}>
                   <Dropdown.Item href="#/action-1"><CgProfile />Profile</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2"><BiLogOut className='mr-1'/>Logout</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2" onClick={()=>setIsLoggedIn(false)}><BiLogOut className='mr-1'/>Logout</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             ) : (
@@ -106,7 +106,7 @@ const NavbarComp = () => {
               <p>Items in your cart:</p>
               {cart.items.map((currentProduct) => (
                 <CartProduct key={currentProduct.id} img={currentProduct.img} id={currentProduct.id} quantity={currentProduct.quantity} />
-              ))}
+              ))}  
               <h1>Total: {cart.getTotalCost().toFixed(2)}$</h1>
 
               <Button variant="success" onClick={checkout}>

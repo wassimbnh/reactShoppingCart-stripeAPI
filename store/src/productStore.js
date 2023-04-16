@@ -6,38 +6,38 @@
 const productsArray = [
     {
         id:"price_1Mx9jIEXYQfbBZFa9YQ6aWIM",
-        title:"Coffee",
-        img:"caffe.jpg",
-        price :4.99
+        title:"T-shirt",
+        img:"T-shirt.jpg",
+        price :45.99
     },
     {
         id:"price_1Mx9nYEXYQfbBZFaxzwbXYPs",
-        title:"Sunglasses",
-        img:"sunglass.jpg",
-        price : 9.99
+        title:"Jacket",
+        img: "jacket.jpg",
+        price : 119.99
     },
     {
         id:"price_1Mx9qhEXYQfbBZFaMd2T2Yg2",
-        title:"T-shirt",
-        img:"camera.jpg",
+        title:"Black Shirt",
+        img:'blackshirt.jpg',
         price : 11.99
     },
     {
-        id:"White dress",
-        title:"Carmera",
-        img:"camera.jpg",
-        price : 11.99
+        id:"jeans",
+        title:"Jeans",
+        img:"jeans.jpg",
+        price : 44.99
     },
     {
         id:"dfsfd",
-        title:"Black Jeans",
-        img:"camera.jpg",
-        price : 11.99
+        title:"Sweater",
+        img:"sweater.jpg",
+        price : 25.99
     },
     {
         id:"price_1Mx9qhEXYQfbBZFaMd2T2Yg2",
-        title:"White Shirt",
-        img:"camera.jpg",
+        title:"SweatShirt",
+        img:"sweatshirt.jpg",
         price : 11.99
     }
 ]
